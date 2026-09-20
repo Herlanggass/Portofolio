@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Satriya Herlangga Saputra — Full Stack Developer</title>
+<meta name="description" content="Portofolio Satriya Herlangga Saputra, full stack developer untuk web dan aplikasi mobile.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="glow" aria-hidden="true"></div>
+<canvas id="scene" aria-hidden="true"></canvas>
+<div class="vignette" aria-hidden="true"></div>
+
+<header class="site-header">
+  <a class="brand" href="#home">Satriya Herlangga Saputra</a>
+  <nav class="nav" aria-label="Navigasi utama">
+    <div class="nav-links">
+      <a href="#projects">Proyek</a>
+      <a href="#skills">Keahlian</a>
+    </div>
+    <button class="icon-btn" id="theme" type="button" aria-label="Ganti tema terang atau gelap">
+      <svg class="i-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+      <svg class="i-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+    </button>
+    <a class="btn btn-sm btn-primary" href="#contact">Hubungi saya</a>
+  </nav>
+</header>
+
+<main>
+  <section class="hero" id="home">
+    <canvas id="rope" aria-hidden="true"></canvas>
+
+    <div class="hero-grid">
+      <div class="hero-copy">
+        <h1>Satriya Herlangga Saputra</h1>
+        <p class="role">Full Stack Developer untuk web dan aplikasi mobile.</p>
+        <p class="lead">Percaya bahwa teknologi dan seni selalu berdampingan. Saya mendesain website dan mengeksplorasi AI bukan sekadar membuat produk, tapi sebagai wadah untuk terus bertumbuh dan berinovasi.</p>
+        <div class="actions">
+          <a class="btn btn-primary" href="#projects">Lihat proyek</a>
+          <!-- Ganti href di bawah dengan tautan file CV kamu -->
+          <a class="btn btn-ghost" href="https://drive.google.com/drive/folders/1aFSUbqtrg7iKqBFPzHcpvWL5X-ZvzJuQ">Unduh CV</a>
+        </div>
+        <ul class="links" aria-label="Media sosial">
+          <li><a href="https://github.com/Herlanggass" target="_blank" rel="noopener">GitHub</a></li>
+          <li><a href="https://www.linkedin.com/in/satriya-herlangga-saputra-3aa446329/" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a href="https://www.instagram.com/tipennihh_/" target="_blank" rel="noopener">Instagram</a></li>
+          <li><a href="https://www.tiktok.com/@herlanggass_" target="_blank" rel="noopener">TikTok</a></li>
+        </ul>
+      </div>
+
+      <div class="hero-zone" id="zone">
+        <p class="hint" id="hint">]_[</p>
+      </div>
+    </div>
+
+    <div class="lanyard" id="lanyard" tabindex="0" role="group"
+         aria-label="Kartu identitas Satriya Herlangga Saputra. Tarik dengan mouse atau jari, atau gunakan tombol panah untuk mengayunkannya.">
+      <div class="clip"></div>
+      <div class="badge">
+        <div class="badge-top">
+          <span>ID 2026-SH</span>
+          <span class="dot" aria-hidden="true"></span>
+        </div>
+        <div class="monogram" aria-hidden="true">SH</div>
+        <h3>Satriya Herlangga Saputra</h3>
+        <p class="badge-role">Full Stack Developer</p>
+        <dl>
+          <div><dt>Fokus</dt><dd>Web &amp; mobile</dd></div>
+          <div><dt>Bahasa</dt><dd>HTML, JS, CSS, Lua</dd></div>
+        </dl>
+        <div class="barcode" aria-hidden="true"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="projects">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Proyek pilihan</h2>
+        <p>Dua website yang saya bangun dan sudah bisa dicoba langsung.</p>
+      </div>
+
+      <div class="projects">
+        <article class="project">
+          <div class="project-text">
+            <h3>RingAbsensi</h3>
+            <p>Sistem absensi kelas. Dosen menandai kehadiran mahasiswa (hadir, izin, sakit, atau alpha), meninjau ringkasannya sebelum menyimpan, dan mengelola data mahasiswa di satu tempat.</p>
+            <a class="btn btn-ghost btn-sm project-link" href="https://ringabsensi.netlify.app/" target="_blank" rel="noopener">Buka RingAbsensi</a>
+          </div>
+          <div class="visual" role="img" aria-label="Ilustrasi tabel absensi mahasiswa dengan status hadir, izin, sakit, alpha, dan belum dicek">
+            <div class="mock" aria-hidden="true">
+              <div class="mock-chips">
+                <span class="chip on">Hadir</span><span class="chip">Izin</span><span class="chip">Sakit</span><span class="chip">Alpha</span>
+              </div>
+              <div class="mock-row"><i class="sk w1"></i><i class="sk w4"></i><span class="pill p-hadir">Hadir</span></div>
+              <div class="mock-row"><i class="sk w1"></i><i class="sk w2"></i><span class="pill p-hadir">Hadir</span></div>
+              <div class="mock-row"><i class="sk w1"></i><i class="sk w4"></i><span class="pill p-izin">Izin</span></div>
+              <div class="mock-row"><i class="sk w1"></i><i class="sk w3"></i><span class="pill p-sakit">Sakit</span></div>
+              <div class="mock-row"><i class="sk w1"></i><i class="sk w2"></i><span class="pill p-belum">Belum</span></div>
+              <div class="mock-foot"><span class="mock-btn">Simpan Absensi</span></div>
+            </div>
+          </div>
+        </article>
+
+        <article class="project">
+          <div class="project-text">
+            <h3>RingTiket</h3>
+            <p>Website pemesanan tiket pesawat, bus, dan kereta. Pembeli memilih tiket, mengisi data, lalu melihat pesanannya. Admin menambah dan mengubah tiket lewat halaman khusus.</p>
+            <a class="btn btn-ghost btn-sm project-link" href="https://ringtiket.netlify.app/" target="_blank" rel="noopener">Buka RingTiket</a>
+          </div>
+          <div class="visual" role="img" aria-label="Ilustrasi daftar tiket pesawat, bus, dan kereta dengan tombol beli">
+            <div class="mock" aria-hidden="true">
+              <div class="mock-chips">
+                <span class="chip on">Semua</span><span class="chip">Pesawat</span><span class="chip">Bus</span><span class="chip">Kereta</span>
+              </div>
+              <div class="tk"><span class="tk-type">Pesawat</span><div class="tk-info"><i class="sk w4"></i><i class="sk w2"></i></div><span class="tk-buy">Beli</span></div>
+              <div class="tk"><span class="tk-type">Bus</span><div class="tk-info"><i class="sk w2"></i><i class="sk w3"></i></div><span class="tk-buy">Beli</span></div>
+              <div class="tk"><span class="tk-type">Kereta</span><div class="tk-info"><i class="sk w4"></i><i class="sk w3"></i></div><span class="tk-buy">Beli</span></div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="skills">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Keahlian</h2>
+        <p>Fondasi yang saya pakai setiap hari untuk membangun antarmuka dan logika aplikasi.</p>
+      </div>
+      <ul class="skills">
+        <li class="skill"><h3>HTML</h3><p>Struktur halaman web yang rapi dan mudah diakses.</p></li>
+        <li class="skill"><h3>CSS</h3><p>Tata letak responsif dan desain antarmuka.</p></li>
+        <li class="skill"><h3>JavaScript</h3><p>Interaksi, animasi, dan logika aplikasi.</p></li>
+        <li class="skill"><h3>Lua</h3><p>Scripting dan logika program.</p></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="section contact" id="contact">
+    <div class="wrap">
+      <h2>Punya proyek atau ide? Mari bicara.</h2>
+      <p class="lead">Ceritakan kebutuhanmu lewat email, dan kita mulai dari 0.</p>
+      <a class="mail" href="mailto:email@domain.com">satriyaherlangga@gmail.com</a>
+      <ul class="links" aria-label="Media sosial">
+        <li><a href="https://github.com/Herlanggass" target="_blank" rel="noopener">GitHub</a></li>
+        <li><a href="https://www.linkedin.com/in/satriya-herlangga-saputra-3aa446329/" target="_blank" rel="noopener">LinkedIn</a></li>
+        <li><a href="https://www.instagram.com/tipennihh_/" target="_blank" rel="noopener">Instagram</a></li>
+        <li><a href="https://www.tiktok.com/@herlanggass_" target="_blank" rel="noopener">TikTok</a></li>
+      </ul>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <span>© 2026 Satriya Herlangga Saputra</span>
+  <a href="#home">Kembali ke atas</a>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
+
